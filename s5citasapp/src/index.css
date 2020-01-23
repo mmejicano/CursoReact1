@@ -1,0 +1,93 @@
+html {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(-225deg, rgb(69, 98, 178) 0%, rgb(16, 141, 89) 52%, rgb(0, 255, 149) 100%);
+  min-height: 100%;
+  padding-bottom: 5rem;
+}
+h1, h2  {
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+}
+.lista-citas .media {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 3rem;
+}
+
+.lista-citas .media:last-of-type{
+  border-bottom: 0;
+}
+.lista-citas .media-body p {
+  margin:0;
+}
+.lista-citas .media-body button {
+  margin-top: 1rem!important;
+}
+.lista-citas .media-body span {
+  font-weight: bold;
+}
+
+label {
+  color: white;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="text"]  {
+  height: 38px;
+    padding: 6px 10px;
+    background-color: rgba(210, 247, 225, 0.555);
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.cita {
+  padding: 2rem;
+  background: rgba(217, 233, 253, 0.603);
+  border-bottom: 1px solid #e1e1e1;
+  color: rgb(51, 51, 51);
+}
+
+.cita p {
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+.cita p span {
+  font-weight: normal;
+
+}
+.cita:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.cita:last-of-type {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.button.eliminar,
+.button.eliminar:hover {
+  background-color: #fa08308a;
+  color: white;
+  margin-top: 1rem;
+}
+
+.alerta-error {
+  background-color: rgba(194, 135, 135, 0.39);
+  font-weight: bold;
+  color: rgb(230, 40, 40);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+} 
