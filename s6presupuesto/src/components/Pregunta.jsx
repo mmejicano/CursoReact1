@@ -1,7 +1,8 @@
 import React, { Fragment, useState } from 'react';
 import Error from './Error';
+import PropTypes from 'prop-types';
 
-const Pregunta = () => {
+const Pregunta = ({guardarPresupuesto, guardarRestante, setmostrarpregunta}) => {
 
 
     // Definir el state local
@@ -21,9 +22,13 @@ const Pregunta = () => {
             setError(true);
             return;
         }
-        setError(false);
 
         // SI PASA VALIDACION
+        setError(false);
+        guardarRestante(cantidad);
+        guardarPresupuesto(cantidad);
+        setmostrarpregunta(false);
+
     }
     return (
         <Fragment>
@@ -46,4 +51,9 @@ const Pregunta = () => {
     );
 }
 
+Pregunta.propTypes = {
+    guardarPresupuesto: PropTypes.func.isRequired,
+    guardarRestante: PropTypes.func.isRequired,
+    setmostrarpregunta: PropTypes.func.isRequired
+}
 export default Pregunta;

@@ -62,7 +62,10 @@ const Formulario = () => {
         <form>
             <Campo>
             <Label>Marca</Label>
-            <Select name="marca" value="marca" onChange={obtenerInfo}>
+            <Select name="marca" 
+                value="marca" 
+                onChange={obtenerInfo}
+            >
                 <option value="">-- Seleccione --</option>
                 <option value="americano">Americano</option>
                 <option value="europeo">Europeo</option>
@@ -72,7 +75,10 @@ const Formulario = () => {
             </Campo>
             <Campo>
             <Label>Año</Label>
-            <Select name="anio" value="anio" onChange={obtenerInfo}>
+            <Select name="anio" 
+                value="anio" 
+                onChange={obtenerInfo}
+            >
                 <option value="">-- Seleccione --</option>
                 <option value="2020">2020</option>
                 <option value="2019">2019</option>
